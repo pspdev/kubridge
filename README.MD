@@ -20,7 +20,7 @@
 - kuKernelPokew
 - kuKernelSetDdrMemoryProtection
 
-##Building:
+## Building:
     psp-cmake . -B build; make; make install
 
 ### Credits: 
