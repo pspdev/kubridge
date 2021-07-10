@@ -7,6 +7,10 @@
 #include <pspsysmem_kernel.h>
 #include <pspctrl.h>
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 /**
  * Functions to let user mode access certain functions only available in
  * kernel mode
@@ -171,5 +175,9 @@ int kuKernelCall(void *func_addr, struct KernelCallArg *args);
 int kuKernelCallExtendStack(void *func_addr, struct KernelCallArg *args, int stack_size);
 
 void kuKernelGetUmdFile(char *umdfile, int size);
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif
