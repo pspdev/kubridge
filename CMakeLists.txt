@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.16)
+cmake_minimum_required(VERSION 3.10)
 project(kubridge VERSION 1.0 LANGUAGES ASM)
 
 if(NOT CMAKE_BUILD_TYPE)
