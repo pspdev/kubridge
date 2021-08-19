@@ -20,10 +20,10 @@ endfunction()
 
 build_stubs(kubridge_OBJS kubridge 1)
 
-add_library(kubridge STATIC
+add_library(pspkubridge STATIC
     ${kubridge_OBJS}
 )
 
-install( TARGETS kubridge CONFIGURATIONS RELEASE
+install( TARGETS pspkubridge CONFIGURATIONS RELEASE
                                 DESTINATION ${PSPDEV}/psp/lib)
 install( FILES ${CMAKE_SOURCE_DIR}/include/kubridge.h DESTINATION ${PSPDEV}/psp/include)
