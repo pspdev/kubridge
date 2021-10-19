@@ -25,5 +25,5 @@ add_library(pspkubridge STATIC
 )
 
 install( TARGETS pspkubridge CONFIGURATIONS RELEASE
-                                DESTINATION ${PSPDEV}/psp/lib)
-install( FILES ${CMAKE_SOURCE_DIR}/include/kubridge.h DESTINATION ${PSPDEV}/psp/include)
+                                DESTINATION $ENV{PSPDEV}/psp/lib)
+install( FILES ${CMAKE_SOURCE_DIR}/include/kubridge.h DESTINATION $ENV{PSPDEV}/psp/include)
