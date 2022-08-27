@@ -18,7 +18,7 @@ function(build_stubs _OBJS STUB_NAME STUB_COUNT)
     set(${_OBJS} ${OBJS} PARENT_SCOPE)
 endfunction()
 
-build_stubs(kubridge_OBJS kubridge 1)
+build_stubs(kubridge_OBJS kubridge 17)
 
 add_library(pspkubridge STATIC
     ${kubridge_OBJS}
